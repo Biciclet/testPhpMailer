@@ -42,11 +42,11 @@ $mail->Port = 25; // Par défaut
 $mail->CharSet = "utf-8";
 
 // Expéditeur
-$mail->SetFrom('swinginlover@hotmail.com', 'Ange Mondoloni');
+$mail->SetFrom('biciclet11@gmail.com', 'Ange Mondoloni');
 // Destinataire(s)
-$mail->AddAddress('swinginlover@hotmail.com', 'Nom Prénom');
+$mail->AddAddress('swinginlover@hotmail.com', 'Ange Mondoloni');
 // Objet
-$mail->Subject = 'Objet du message';
+$mail->Subject = 'Envoi d\'un mail avec une PJ';
 
 // Votre message
 $mail->MsgHTML('<p>Ceci est un mail de test</p>');
@@ -56,10 +56,10 @@ $mail->MsgHTML('<p>Ceci est un mail de test</p>');
 // $mail->AddReplyTo('expediteur@example.com','Nom Prénom');
 
 // Ajouter une pièce jointe
-// $mail->AddAttachment('images/phpmailer-mini.gif');
+$mail->AddAttachment('assets/img/goGoTomago.jpg');
 
 // Reçevoir une confirmation de lecture
-$mail->ConfirmReadingTo('swinginlover@hotmail.com','Nom Prénom');
+// $mail->ConfirmReadingTo('biciclet11@gmail.com','Nom Prénom');
 
 // Envoi du mail avec gestion des erreurs
 if(!$mail->Send()) {
